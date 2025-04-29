@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <!-- Header / Nav (same as Home) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="img/Logo.png" alt="Caféau logo" class="logo" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Menu Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Our Coffee Selection</h2>
+      <p>Every sip, crafted just for you.</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu">
+    <div class="container">
+
+      <!-- Hot Drinks -->
+      <h3 class="menu-category">Hot Drinks</h3>
+      <div class="menu-grid">
+        <article class="menu-item">
+          <img src="img/espresso-shot.png" alt="Espresso" />
+          <div class="menu-details">
+            <h4>Espresso</h4>
+            <p>Rich, intense, and pure.</p>
+            <p class="price">$2.50</p>
+            <button class="btn add-to-cart"
+              data-name="Espresso"
+              data-price="2.50"
+              data-img="img/espresso-shot.png">
+              + Add to Cart
+            </button>
+          </div> 
+        </article>
+
+        <article class="menu-item">
+          <img src="img/caffe-latte.png" alt="Café Latte" />
+          <div class="menu-details">
+            <h4>Café Latte</h4>
+            <p>Espresso blended with creamy steamed milk.</p>
+            <p class="price">$2.50</p>
+            <button class="btn add-to-cart"
+              data-name="Café Latte"
+              data-price="2.50"
+              data-img="img/caffe-latte.png">
+              + Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <article class="menu-item">
+            <img src="img/cappuccino.png" alt="Cappuccino"/>
+            <div class="menu-details">
+                <h4>Cappuccino</h4>
+                <p>Espresso with steamed milk and rich foam.</p>
+                <p class="price">$2.50</p>
+                <button class="btn add-to-cart"
+                  data-name="Cappuccino"
+                  data-price="2.50"
+                  data-img="img/cappuccino.png">
+                  + Add to Cart
+                </button>
+            </div>  
+        </article>
+
+        <article class="menu-item">
+            <img src="img/hot-chocolate.png" alt="Hot Chocolate" />
+            <div class="menu-details">
+                <h4>Hot Chocolate</h4>
+                <p>Rich, creamy cocoa topped with whipped cream.</p>
+                <p class="price">$2.50</p>
+                <button class="btn add-to-cart"
+                  data-name="Hot Chocolate"
+                  data-price="2.50"
+                  data-img="img/hot-chocolate.png">
+                  + Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img src="img/black-coffee.png" alt="Black Coffee" />
+            <div class="menu-details">
+                <h4>Black Coffee</h4>
+                <p>Freshly brewed coffee, bold and pure.</p>
+                <p class="price">$2.50</p>
+                <button class="btn add-to-cart"
+                  data-name="Black Coffee"
+                  data-price="2.50"
+                  data-img="img/black-coffee.png">
+                  + Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img src="img/caramel-macchiato.png" alt="Caramel Macchiato" />
+            <div class="menu-details">
+               <h4>Caramel Macchiato</h4> 
+               <p>Steamed milk and espresso topped with caramel drizzle.</p>
+               <p class="price">$2.50</p>
+               <button class="btn add-to-cart"
+                  data-name="Caramel Macchiato"
+                  data-price="2.50"
+                  data-img="img/caramel-macchiato.png">
+                  + Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <!-- More hot drinks if you have them -->
+      </div>
+
+      <!-- Cold Drinks -->
+      <h3 class="menu-category">Cold Drinks</h3>
+      <div class="menu-grid">
+
+        <article class="menu-item">
+          <img src="img/cold-brew.png" alt="Cold Brew"/>
+          <div class="menu-details">
+            <h4>Cold Brew</h4>
+            <p>Chilled, slow-steeped coffee.</p>
+            <p class="price">$2.50</p>
+            <button class="btn add-to-cart"
+                data-name="Cold Brew"
+                data-price="2.50"
+                data-img="img/cold-brew.png">
+                + Add to Cart
+              </button>
+          </div>  
+        </article>
+
+        <article class="menu-item">
+            <img src="img/ice-macchiato.png" alt="Iced Macchiato"/>
+            <div class="menu-details">
+              <h4>Iced Macchiato</h4>
+              <p>Chilled espresso layered over milk and ice.</p>
+              <p class="price">$2.50</p>
+              <button class="btn add-to-cart"
+                data-name="Iced Macchiato"
+                data-price="2.50"
+                data-img="img/ice-macchiato.png">
+                + Add to Cart
+              </button>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img src="img/ice-mocha.png" alt="Iced Mocha"/>
+            <div class="menu-details">
+              <h4>Iced Mocha</h4>
+              <p>Chilled espresso blended with chocolate and milk.</p>
+              <p class="price">$2.50</p>
+              <button class="btn add-to-cart"
+                data-name="Iced Mocha"
+                data-price="2.50"
+                data-img="img/ice-mocha.png">
+                + Add to Cart
+              </button>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img src="img/ice-vanilla.png" alt="Iced Vanilla"/>
+            <div class="menu-details">
+              <h4>Iced Vanilla</h4>
+              <p>Chilled espresso with vanilla and milk over ice.</p>
+              <p class="price">$2.50</p>
+              <button class="btn add-to-cart"
+                data-name="Iced Vanilla"
+                data-price="2.50"
+                data-img="img/ice-vanilla.png">
+                + Add to Cart
+              </button>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img src="img/glace-coffee.png" alt="Glacè Coffee"/>
+            <div class="menu-details">
+              <h4>Glacè Coffee</h4>
+              <p>Chilled coffee served with a scoop of ice cream.</p>
+              <p class="price">$2.50</p>
+              <button class="btn add-to-cart"
+                data-name="Glacè Coffee"
+                data-price="2.50"
+                data-img="img/glace-coffee.png">
+                + Add to Cart
+              </button>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img src="img/non-dairy-coffee.png" alt="Non-Dairy Coffee"/>
+            <div class="menu-details">
+              <h4>Non-Dairy Coffee</h4>
+              <p>Coffee crafted with your choice of plant-based milk.</p>
+              <p class="price">$2.50</p>
+              <button class="btn add-to-cart"
+                data-name="Non-Dairy Coffee"
+                data-price="2.50"
+                data-img="img/non-dairy-coffee.png">
+                + Add to Cart
+              </button>
+            </div>
+        </article>
+
+        <!-- More cold drinks if you have them -->
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Caféau. All rights reserved.</p>
+      <ul class="social">
+        <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

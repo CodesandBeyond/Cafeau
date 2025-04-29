@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="img/Logo.png" alt="Caféau logo" class="logo"/>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+/
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Your Perfect Cup, Waiting</h2>
+      <p>Skip the line—order ahead and pick up your favorite roast on your schedule.</p>
+      <a href="#order" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Drinks -->
+  <section class="featured">
+    <div class="container">
+      <h3>Our Top Picks</h3>
+      <div class="cards">
+
+        <article class="card">
+          <img src="img/espresso-shot.png" alt="Espresso shot" />
+          <h4>Espresso</h4>
+          <p>Rich, bold, and unapologetically classic.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/caffe-latte.png" alt="Café Latte" />
+          <h4>Café Latte</h4>
+          <p>Creamy milk meets our smooth espresso.</p>
+        </article>
+
+        <article class="menu-item">
+          <img src="img/ice-mocha.png" alt="Iced Mocha"/>
+          <h4>Iced Mocha</h4>
+          <p>Chilled espresso blended with chocolate and milk.</p>
+      </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Order CTA -->
+  <section id="order" class="quick-order">
+    <div class="container">
+      <h3>Ready to Roll?</h3>
+      <form action="#" method="post">
+        <label for="drink-select">Choose Your Drink:</label>
+        <select id="drink-select" name="drink">
+          <option value="espresso">Espresso</option>
+          <option value="latte">Café Latte</option>
+          <option value="cold-brew">Cold Brew</option>
+        </select>
+        <label for="pickup-time">Pickup Time:</label>
+        <input type="time" id="pickup-time" name="pickup" required/>
+        <button type="submit" class="btn">Place Order</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Caféau. All rights reserved.</p>
+      <ul class="social">
+        <li><a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
